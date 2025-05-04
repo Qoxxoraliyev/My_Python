@@ -1,7 +1,9 @@
-# 1 dan n gacha bo‘lgan sonlar yig‘indisini hisoblaydigan dastur
-# yozing (n foydalanuvchi tomonidan kiritiladi).
-n=int(input())
-sum=0
-for i in range(1,n+1):
-    sum+=i
-print(sum)
+class Calculator():
+      def __init__(self,a,b):
+            self.a=a
+            self.b=b
+class Algebra(Calculator):
+      def kopaytma(self):
+            print(f"Ikki sonning kopaytmasi:{self.a*self.b}")
+ab=Algebra(4,5)
+ab.kopaytma()
